@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fuerte_task/screens/screen2.dart';
+import 'package:fuerte_task/screens/bottom_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       
         primarySwatch: Colors.blue,
       ),
-      home: Screen2(),
+      home:BottomNavigationBarWidget(),
     );
   }
 }
