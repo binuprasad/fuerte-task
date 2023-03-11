@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fuerte_task/screens/screen1/screen1.dart';
-import 'package:fuerte_task/screens/screen2.dart';
+import 'package:fuerte_task/screens/screen2/screen2.dart';
+import 'package:fuerte_task/screens/screen3/screen3.dart';
 import 'package:fuerte_task/utils/colors.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -16,10 +17,10 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   int pageIndex = 0;
 
   final pages = [
-    const Screen1(),
+     const Screen2(),
     const Screen2(),
     const Screen1(),
-    const Screen2(),
+     Screen3(),
   ];
 
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fuerte_task/screens/screen2.dart';
 import 'package:fuerte_task/utils/colors.dart';
+import '../screen2/widgets/doctor_details_tile_widget.dart';
 
 class Screen1 extends StatelessWidget {
   const Screen1({super.key});
@@ -259,6 +259,7 @@ class Screen1 extends StatelessWidget {
                   child: const Text('Make an appointment'),
                 ),
               ),
+              const SizedBox(height: 10,)
             ],
           ),
         ),
