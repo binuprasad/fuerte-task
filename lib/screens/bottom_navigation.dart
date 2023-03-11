@@ -17,10 +17,12 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   int pageIndex = 0;
 
   final pages = [
-     const Screen2(),
+    const Screen2(),
+      Screen3(),
+     
     const Screen2(),
     const Screen1(),
-     Screen3(),
+   
   ];
 
   @override

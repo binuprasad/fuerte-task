@@ -57,50 +57,52 @@ class Screen3 extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView(
-        primary: false,
-        children: [
-          Column(
-            children: [
-              Container(
-                  color: AppColors().blueGrey,
-                  height: 110,
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 10),
-                    child: Date(),
-                  )),
-              const Header(leadingTxt: 'SERVICES'),
-              SizedBox(
-                height: CustomMediaquery().height(context) * 0.12,
-                width: CustomMediaquery().width(context),
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 4,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: ServiceButtons(
-                        btntxt: btntxt[index],
-                        icons: icons[index],
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
-          Divider(
-            thickness: 15,
-          ),
-          HeaderTile(),
-          ListView.builder(
-            primary: false,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return VaccinationTimeCard();
-            },
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+           
+          children: [
+            Column(
+              children: [
+                Container(
+                    color: AppColors().blueGrey,
+                    height: 110,
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: Date(),
+                    )),
+                const Header(leadingTxt: 'SERVICES'),
+                SizedBox(
+                  height: CustomMediaquery().height(context) * 0.12,
+                  width: CustomMediaquery().width(context),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 4,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: ServiceButtons(
+                          btntxt: btntxt[index],
+                          icons: icons[index],
+                        ),
+                      );
+                    },
+                  ),
+                ),Divider(
+              thickness: 15,
+            ),
+            HeaderTile(),
+            ListView.builder(itemCount: 4,
+              primary: false,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return VaccinationTimeCard();
+              },
+            ),
+              ],
+            ),
+            
+          ],
+        ),
       ),
     );
   }
