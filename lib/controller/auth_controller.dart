@@ -128,7 +128,9 @@ class AuthProvider extends ChangeNotifier {
         verificationFailed: (error) {},
         codeSent: codeSent,
         timeout: const Duration(seconds: 30),
-        codeAutoRetrievalTimeout: (verificationId) {},
+        codeAutoRetrievalTimeout: (verificationId) {
+           verificationId = vid;
+        },
         forceResendingToken: resendToken);
   }
 

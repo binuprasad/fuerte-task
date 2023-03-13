@@ -81,6 +81,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.20"
+  crea_radio_button:
+    dependency: "direct main"
+    description:
+      name: crea_radio_button
+      sha256: ff6c597247630f0a0a899141e8dd07d5904fef44949e3a0fd5cf6538c32c2116
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.6.0"
   cross_file:
     dependency: transitive
     description:

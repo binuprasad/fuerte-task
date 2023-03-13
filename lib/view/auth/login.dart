@@ -141,7 +141,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     height: 50,
                     child: CustomButton(
                         text:
-                            authProvider.isRegistered ? 'loading....' : "Login",
+                            "Login",
                         onPressed: () => authProvider.sendPhoneNumber(context)),
                   ),
                 ],

@@ -129,7 +129,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         Consumer<AuthProvider>(
                           builder: (context, value, child) => GestureDetector(
                             onTap: () {
-                              authProvider.resendOTP(
+                              value.resendOTP(
                                   authProvider.phoneController.text.trim());
                             },
                             child: Text(
@@ -152,18 +152,18 @@ class _OtpScreenState extends State<OtpScreen> {
   }
 
   void verifyOtp(BuildContext context, String userOtp) {
-    final ap = Provider.of<AuthProvider>(context, listen: false);
-    ap.verifyOtp(
+    final authprovider = Provider.of<AuthProvider>(context, listen: false);
+    authprovider.verifyOtp(
       context: context,
       verificationId: widget.verificationId,
       userOtp: userOtp,
       onSuccess: () {
-        ap.checkExistingUser().then(
+        authprovider.checkExistingUser().then(
           (value) async {
             if (value == true) {
-              ap.getDataFromFirestore().then(
-                    (value) => ap.saveUserDataToSP().then(
-                          (value) => ap.setSignIn().then(
+              authprovider.getDataFromFirestore().then(
+                    (value) => authprovider.saveUserDataToSP().then(
+                          (value) => authprovider.setSignIn().then(
                                 (value) => Navigator.pushAndRemoveUntil(
                                     context,
                                     MaterialPageRoute(
