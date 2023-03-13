@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142221355128",
+    "project_id": "fuerte-task",
+    "storage_bucket": "fuerte-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142221355128:android:added81ba04a62511a658d",
+        "android_client_info": {
+          "package_name": "com.example.fuerte_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142221355128-6104velq42c3no6qe56ou8mtotofktdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhlbl9-BdDdspADBx9HCnz6P8vZf3lOjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142221355128-6104velq42c3no6qe56ou8mtotofktdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

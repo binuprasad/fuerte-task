@@ -50,7 +50,7 @@ class Screen1 extends StatelessWidget {
                     Row(
                       children: const [
                         Text(
-                          "Total kost",
+                          "Total cost",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -189,8 +189,8 @@ class Screen1 extends StatelessWidget {
                                     value: 1,
                                     groupValue: selectedRadio,
                                     onChanged: (value) => onRadioChanged(value),
-                                    activeColor: Colors.blue,
-                                  ),
+                                        activeColor: Colors.blue,
+                              ),
                                 ),
                                 const Text(
                                   "PayPal",
@@ -203,7 +203,7 @@ class Screen1 extends StatelessWidget {
                               ],
                             ),
                           ),
-                        ]),
+                        ],),
                         TableRow(children: [
                           SizedBox(
                             height: 60,

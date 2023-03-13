@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/network_images.dart';
+import '../../../../utils/network_images.dart';
 
 class DoctorDetails extends StatelessWidget {
   const DoctorDetails({

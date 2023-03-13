@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:fuerte_task/screens/screen2/widgets/header_tile.dart';
-import 'package:fuerte_task/screens/screen3/date_picker.dart';
-import 'package:fuerte_task/screens/screen3/widgets/head_tile.dart';
+import 'package:fuerte_task/view/screens/screen2/widgets/header_tile.dart';
+import 'package:fuerte_task/view/screens/screen3/widgets/date_picker.dart';
+import 'package:fuerte_task/view/screens/screen3/widgets/head_tile.dart';
 import 'package:fuerte_task/utils/colors.dart';
 import 'package:fuerte_task/utils/network_images.dart';
 
-import '../../utils/mediaquery.dart';
+import '../../../utils/mediaquery.dart';
 
 class Screen3 extends StatelessWidget {
   Screen3({super.key});

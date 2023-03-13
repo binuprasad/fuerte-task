@@ -10,52 +10,9 @@ import 'package:flutter_calendar_week/src/utils/compare_date.dart';
 import 'package:flutter_calendar_week/src/utils/find_current_week_index.dart';
 import 'package:flutter_calendar_week/src/utils/separate_weeks.dart';
 
-import '../../utils/colors.dart';
 
 class CalendarWeekController {
-/*
-Example:
-  CalendarWeek(
-                controller: CalendarWeekController(),
-                height: 100,
-                showMonth: true,
-                minDate: DateTime.now().add(
-                  Duration(days: -365),
-                ),
-                maxDate: DateTime.now().add(
-                  Duration(days: 365),
-                ),
-                
-                onDatePressed: (DateTime datetime) {
-                  // Do something
-                },
-                onDateLongPressed: (DateTime datetime) {
-                // Do something
-                },
-                onWeekChanged: () {
-                  // Do something
-                },
-                monthViewBuilder: (date) => Text(date.toString()),
-                decorations: [
-                  DecorationItem(
-                      decorationAlignment: FractionalOffset.bottomRight,
-                      date: DateTime.now(),
-                      decoration: Icon(
-                        Icons.today,
-                        color: Colors.blue,
-                      )),
-                  DecorationItem(
-                      date: DateTime.now().add(Duration(days: 3)),
-                      decoration: Text(
-                        'Holiday',
-                        style: TextStyle(
-                          color: Colors.brown,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      )),
-                ],
-              )
-*/
+
 
   /// Today date time
   DateTime _today = DateTime.now();

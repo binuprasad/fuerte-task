@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'package:fuerte_task/screens/screen3/date_time_picker_package.dart';
+import 'package:fuerte_task/view/screens/screen3/widgets/date_time_picker_package.dart';
 
 class Date extends StatefulWidget {
   @override

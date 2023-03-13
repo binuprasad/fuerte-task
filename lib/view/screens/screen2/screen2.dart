@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/colors.dart';
-import '../../utils/network_images.dart';
+import '../../../utils/colors.dart';
+import '../../../utils/network_images.dart';
 import 'widgets/card_body_widget.dart';
 
 class Screen2 extends StatelessWidget {

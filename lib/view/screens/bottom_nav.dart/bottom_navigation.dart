@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:fuerte_task/screens/screen1/screen1.dart';
-import 'package:fuerte_task/screens/screen2/screen2.dart';
-import 'package:fuerte_task/screens/screen3/screen3.dart';
-import 'package:fuerte_task/utils/colors.dart';
+import 'package:fuerte_task/view/screens/screen1/screen1.dart';
+import 'package:fuerte_task/view/screens/screen2/screen2.dart';
+import 'package:fuerte_task/view/screens/screen3/screen3.dart';
+
+import '../../../utils/colors.dart';
+import '../profile/user_profile.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({Key? key}) : super(key: key);
@@ -18,11 +20,9 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
 
   final pages = [
     const Screen2(),
-      Screen3(),
-     
-    const Screen2(),
+    Screen3(),
     const Screen1(),
-   
+    const UserProfile()
   ];
 
   @override

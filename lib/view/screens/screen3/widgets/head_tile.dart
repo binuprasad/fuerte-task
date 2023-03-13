@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fuerte_task/utils/network_images.dart';
 
-import '../../../utils/colors.dart';
+import '../../../../utils/colors.dart';
 
 class HeaderTile extends StatelessWidget {
   const HeaderTile({super.key, });
